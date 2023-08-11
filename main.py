@@ -1,6 +1,7 @@
 import random
 import secrets
 import string
+import pyfiglet
 
 
 def get_password_length() -> int:
@@ -86,4 +87,6 @@ def main() -> None:
 
 
 if __name__ == "__main__":
+    intro = pyfiglet.figlet_format("Password Generator")
+    print(intro)
     main()
